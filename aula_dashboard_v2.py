@@ -64,10 +64,11 @@ class PaginaWeb:
         folium_static(mapa, width=650, height=400)
 
 if __name__ == '__main__':
+    st.sidebar.header('Menu')
     arquivo = st.sidebar.file_uploader('Selecione o arquivo')
     if arquivo:
         # Colocando um cabeçalho
-        st.header('Estados do MS',)
+        st.header('Dashboar Interativo')
         # Criando uma instância da classe
         pwb = PaginaWeb
         # lendo um arquivo
